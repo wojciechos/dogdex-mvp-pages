@@ -44,7 +44,7 @@
   </head>
   <body>
     <main>
-      <p class="meta">Last updated: June 30, 2026</p>
+      <p class="meta">Last updated: July 6, 2026</p>
       <h1>DogDex Privacy Policy</h1>
       <p>
         DogDex is a free dog collecting camera app. The current MVP does not require an account, does not include
@@ -57,8 +57,13 @@
         saved DogDex cards are used inside the app experience.
       </p>
       <p>
-        The current MVP stores your saved DogDex collection locally on your device. DogDex does not operate a backend
-        service that receives your photos, stickers, dog names, place labels, or notes.
+        When you capture a dog, the photo is sent securely to the DogDex breed identification service, where an AI
+        vision model recognizes the breed. Photos are processed only to answer that request: they are not stored on
+        DogDex servers, not used to build profiles, and not used for advertising.
+      </p>
+      <p>
+        Your saved DogDex collection - stickers, breed cards, dog names, place labels, and notes - stays local on
+        your device and is never uploaded.
       </p>
 
       <h2>Optional Catch Details</h2>
@@ -69,14 +74,20 @@
 
       <h2>Location</h2>
       <p>
-        DogDex does not currently request device location permission. If a future version adds maps or location-based
-        features, location will be opt-in and documented before release.
+        DogDex can attach an approximate place to a catch, but only when you tap "Add place" and grant the system
+        location permission. The place label and approximate coordinates are stored locally in your collection on
+        your device and are not sent to DogDex servers. You can edit or remove a saved place at any time, and the
+        private map of your own catches lives entirely on your device.
       </p>
 
       <h2>Third-Party Services</h2>
       <p>
         DogDex uses Apple platform services for app distribution and TestFlight. The app also includes runtime
         libraries used to render the mobile experience and animations.
+      </p>
+      <p>
+        Breed identification runs on Google Cloud (Vertex AI) infrastructure operated for DogDex; photos submitted
+        for identification are not used by DogDex to train models and are not retained after the request completes.
       </p>
       <p>DogDex does not currently include advertising SDKs, analytics SDKs, or a user account backend.</p>
 
