@@ -5,94 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DogDex Privacy Policy</title>
     <style>
-      body {
-        background: #f6fbf4;
-        color: #17291d;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.55;
-        margin: 0;
-      }
-      main {
-        margin: 0 auto;
-        max-width: 760px;
-        padding: 48px 22px;
-      }
-      h1 {
-        font-size: clamp(34px, 8vw, 56px);
-        line-height: 0.98;
-        margin: 0 0 10px;
-      }
-      h2 {
-        font-size: 22px;
-        margin: 34px 0 8px;
-      }
-      p,
-      li,
-      a {
-        color: #4b5c49;
-        font-size: 17px;
-      }
-      a {
-        font-weight: 800;
-      }
-      .meta {
-        color: #667766;
-        font-weight: 800;
-        text-transform: uppercase;
-      }
+      body { background: #f6fbf4; color: #17291d; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; margin: 0; }
+      main { margin: 0 auto; max-width: 760px; padding: 48px 22px; }
+      h1 { font-size: clamp(34px, 8vw, 56px); line-height: 0.98; margin: 0 0 10px; }
+      h2 { font-size: 22px; margin: 34px 0 8px; }
+      p, li, a { color: #4b5c49; font-size: 17px; }
+      a { font-weight: 800; }
+      .meta { color: #667766; font-weight: 800; text-transform: uppercase; }
     </style>
   </head>
   <body>
     <main>
-      <p class="meta">Last updated: July 6, 2026</p>
       <h1>DogDex Privacy Policy</h1>
-      <p>
-        DogDex is a free dog collecting camera app. The current MVP does not require an account, does not include
-        ads, and does not send your DogDex collection to a DogDex server.
-      </p>
 
-      <h2>Camera And Photos</h2>
-      <p>
-        DogDex asks for camera access so you can catch a dog and create a local collectible card. Camera frames and
-        saved DogDex cards are used inside the app experience.
-      </p>
-      <p>
-        When you capture a dog, the photo is sent securely to the DogDex breed identification service, where an AI
-        vision model recognizes the breed. Photos are processed only to answer that request: they are not stored on
-        DogDex servers, not used to build profiles, and not used for advertising.
-      </p>
-      <p>
-        Your saved DogDex collection - stickers, breed cards, dog names, place labels, and notes - stays local on
-        your device and is never uploaded.
-      </p>
+      <p class="meta">Last updated: July 16, 2026</p>
 
-      <h2>Optional Catch Details</h2>
-      <p>
-        You may add optional details to a saved catch, including a dog name, a place label, and a note. These details
-        are stored locally in your DogDex collection.
-      </p>
+      <p>DogDex is a free dog-collecting camera app. It does not require an account, does not contain ads, and does not upload your saved DogDex collection to a DogDex server.</p>
+
+      <h2>Camera, Photos, And AI Breed Guesses</h2>
+
+      <p>DogDex asks for camera access so you can catch a dog and create a local collectible card. Before the first AI breed-guess request, DogDex asks for your explicit permission to send the captured photo through a DogDex service hosted by Vercel to Google Vertex AI. You can cancel without sending. You can withdraw permission at any time from Privacy &amp; Data; withdrawal stops future submissions and the next capture asks again.</p>
+
+      <p>The photo is used to decide whether it shows a dog and, if so, return a likely breed, confidence, and candidate matches. Results can be wrong and are not veterinary, pedigree, or DNA advice. DogDex does not use submitted photos for advertising or tracking and does not train its own model with them.</p>
+
+      <p>DogDex does not intentionally create a permanent server-side photo library or write classifier photos to an application database. Vercel processes the HTTPS request and Google processes the image for the AI result. Google documents that published Gemini models cache customer inputs, outputs, and derived data in project-isolated memory for up to 24 hours by default. Google also documents that prompts flagged as suspicious may be stored securely for abuse investigation for up to 90 days unless the applicable Google Cloud account has an approved abuse-logging opt-out. DogDex conservatively assumes these periods apply until a disabled-cache or approved opt-out configuration is verified. Google states that this data is not used to train or fine-tune AI models without the customer's permission or instruction.</p>
+
+      <p>Withdrawal cannot recall a request that has already been processed or provider security records retained under the periods above. DogDex selects processors subject to contractual and privacy protections appropriate to their role and requires them to provide protection consistent with this policy. If a processor cannot provide equivalent protection, DogDex will stop that processing path.</p>
+
+      <p>Provider references: <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/vertex-ai-zero-data-retention">Google Cloud retention</a>, <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/abuse-monitoring">Google abuse monitoring</a>, and <a href="https://vercel.com/legal/privacy-policy">Vercel Privacy Policy</a>.</p>
+
+      <h2>Saved Collection And Optional Catch Details</h2>
+
+      <p>Saved stickers, breed cards, dog names, place labels, notes, and approximate coordinates stay in local app storage on your device. They are not uploaded as collection data. You may add an optional dog name and note to a saved catch.</p>
 
       <h2>Location</h2>
-      <p>
-        DogDex can attach an approximate place to a catch, but only when you tap "Add place" and grant the system
-        location permission. The place label and approximate coordinates are stored locally in your collection on
-        your device and are not sent to DogDex servers. You can edit or remove a saved place at any time, and the
-        private map of your own catches lives entirely on your device.
-      </p>
 
-      <h2>Third-Party Services</h2>
-      <p>
-        DogDex uses Apple platform services for app distribution and TestFlight. The app also includes runtime
-        libraries used to render the mobile experience and animations.
-      </p>
-      <p>
-        Breed identification runs on Google Cloud (Vertex AI) infrastructure operated for DogDex; photos submitted
-        for identification are not used by DogDex to train models and are not retained after the request completes.
-      </p>
-      <p>DogDex does not currently include advertising SDKs, analytics SDKs, or a user account backend.</p>
+      <p>When you tap Save to Dex, DogDex may request foreground location once. If you allow it, DogDex rounds latitude and longitude to two decimal places before asking Apple's geocoding service for an approximate place label and before saving the coordinate for the private on-device map. Apple may process that approximate coordinate to provide the label and map. If you deny access or location fails, the dog is saved without a place. DogDex does not send the place label or coordinate to its own servers. You can edit or remove the place later.</p>
+
+      <h2>Feedback And Feature Requests</h2>
+
+      <p>In version 1.0.1, DogDex prepares a message in your device's email app. You review and choose whether to send it. DogDex does not directly transmit the message or optional reply email from the app. If you send the email, your email provider and DogDex support process it to respond or improve DogDex. Contact DogDex support to request deletion of a message you sent.</p>
+
+      <h2>Retention And Deletion</h2>
+
+      <p>DogDex has no user account or cloud copy of your collection. Privacy &amp; Data lets you clear the saved collection and local sticker files and resets AI photo sharing to ask before sending. Unsaved camera and sticker-processing files are deleted on retake, cancellation, completion, or screen exit on a best-effort basis.</p>
+
+      <p>Local data remains until you delete it in DogDex, uninstall the app, or the operating system removes app storage. Withdrawing AI-photo permission stops future submissions but does not alter the provider retention periods for already processed requests described above.</p>
+
+      <h2>Third-Party Services And Content</h2>
+
+      <p>DogDex uses Apple platform services for distribution, maps, approximate place labels, and local Apple Vision subject lift; Vercel and Google Vertex AI for AI breed guesses after permission; your email provider only when you choose to send a prepared message; and runtime libraries needed to render the app.</p>
+
+      <p>The catch-reward animation uses “Interactive Dog Mascot” by PraneethKawyaThathsara, without modification, under the Creative Commons Attribution 4.0 license. <a href="https://rive.app/marketplace/27226-51415-interactive-dog-mascot-for-mobile-apps-rive-state-machine/">View the source</a> and <a href="https://creativecommons.org/licenses/by/4.0/">license</a>.</p>
+
+      <p>DogDex does not include advertising SDKs, analytics SDKs, or a user-account backend in version 1.0.1.</p>
 
       <h2>Contact</h2>
-      <p>Contact: <a href="mailto:wojciech.zieba@gmail.com">wojciech.zieba@gmail.com</a></p>
+
+      <p>Email: <a href="mailto:wojciech.zieba@gmail.com">wojciech.zieba@gmail.com</a></p>
     </main>
   </body>
 </html>
