@@ -24,13 +24,13 @@
 
       <h2>Camera, Photos, And AI Breed Guesses</h2>
 
-      <p>DogDex asks for camera access so you can catch a dog and create a local collectible card. Before the first AI breed-guess request, DogDex asks for your explicit permission to send the captured photo through a DogDex service hosted by Vercel to Google Vertex AI. You can cancel without sending. You can withdraw permission at any time from Privacy &amp; Data; withdrawal stops future submissions and the next capture asks again.</p>
+      <p>DogDex asks for camera access so you can catch a dog and create a local collectible card. When you capture a photo for an AI breed guess, DogDex sends the photo through a DogDex service hosted by Vercel to Google Vertex AI.</p>
 
       <p>The photo is used to decide whether it shows a dog and, if so, return a likely breed, confidence, and candidate matches. Results can be wrong and are not veterinary, pedigree, or DNA advice. DogDex does not use submitted photos for advertising or tracking and does not train its own model with them.</p>
 
       <p>DogDex does not intentionally create a permanent server-side photo library or write classifier photos to an application database. Vercel processes the HTTPS request and Google processes the image for the AI result. Google documents that published Gemini models cache customer inputs, outputs, and derived data in project-isolated memory for up to 24 hours by default. Google also documents that prompts flagged as suspicious may be stored securely for abuse investigation for up to 90 days unless the applicable Google Cloud account has an approved abuse-logging opt-out. DogDex conservatively assumes these periods apply until a disabled-cache or approved opt-out configuration is verified. Google states that this data is not used to train or fine-tune AI models without the customer's permission or instruction.</p>
 
-      <p>Withdrawal cannot recall a request that has already been processed or provider security records retained under the periods above. DogDex selects processors subject to contractual and privacy protections appropriate to their role and requires them to provide protection consistent with this policy. If a processor cannot provide equivalent protection, DogDex will stop that processing path.</p>
+      <p>A request that has already been processed cannot be recalled, and provider security records may remain under the periods above. DogDex selects processors subject to contractual and privacy protections appropriate to their role and requires them to provide protection consistent with this policy. If a processor cannot provide equivalent protection, DogDex will stop that processing path.</p>
 
       <p>Provider references: <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/vertex-ai-zero-data-retention">Google Cloud retention</a>, <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/abuse-monitoring">Google abuse monitoring</a>, and <a href="https://vercel.com/legal/privacy-policy">Vercel Privacy Policy</a>.</p>
 
@@ -48,13 +48,13 @@
 
       <h2>Retention And Deletion</h2>
 
-      <p>DogDex has no user account or cloud copy of your collection. Privacy &amp; Data lets you clear the saved collection and local sticker files and resets AI photo sharing to ask before sending. Unsaved camera and sticker-processing files are deleted on retake, cancellation, completion, or screen exit on a best-effort basis.</p>
+      <p>DogDex has no user account or cloud copy of your collection. Privacy &amp; Data lets you clear the saved collection and local sticker files. Unsaved camera and sticker-processing files are deleted on retake, cancellation, completion, or screen exit on a best-effort basis.</p>
 
-      <p>Local data remains until you delete it in DogDex, uninstall the app, or the operating system removes app storage. Withdrawing AI-photo permission stops future submissions but does not alter the provider retention periods for already processed requests described above.</p>
+      <p>Local data remains until you delete it in DogDex, uninstall the app, or the operating system removes app storage. Clearing local data does not alter the provider retention periods for already processed classifier requests described above.</p>
 
       <h2>Third-Party Services And Content</h2>
 
-      <p>DogDex uses Apple platform services for distribution, maps, approximate place labels, and local Apple Vision subject lift; Vercel and Google Vertex AI for AI breed guesses after permission; your email provider only when you choose to send a prepared message; and runtime libraries needed to render the app.</p>
+      <p>DogDex uses Apple platform services for distribution, maps, approximate place labels, and local Apple Vision subject lift; Vercel and Google Vertex AI for AI breed guesses; your email provider only when you choose to send a prepared message; and runtime libraries needed to render the app.</p>
 
       <p>The catch-reward animation uses “Interactive Dog Mascot” by PraneethKawyaThathsara, without modification, under the Creative Commons Attribution 4.0 license. <a href="https://rive.app/marketplace/27226-51415-interactive-dog-mascot-for-mobile-apps-rive-state-machine/">View the source</a> and <a href="https://creativecommons.org/licenses/by/4.0/">license</a>.</p>
 
