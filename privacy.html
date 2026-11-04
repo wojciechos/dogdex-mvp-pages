@@ -18,13 +18,13 @@
     <main>
       <h1>FaunaNote Privacy Policy</h1>
 
-      <p class="meta">Last updated: July 23, 2026</p>
+      <p class="meta">Last updated: November 3, 2026</p>
 
       <p>FaunaNote is a free animal-collecting camera app. It does not require an account, does not contain ads, and does not upload your saved FaunaNote collection to a FaunaNote server.</p>
 
       <h2>Camera, Photos, And AI Animal Identification</h2>
 
-      <p>FaunaNote asks for camera access so you can photograph an animal and create a local collectible species card. When you ask for AI identification, FaunaNote sends the captured photo through a FaunaNote service hosted by Vercel to Google Vertex AI.</p>
+      <p>FaunaNote asks for camera access so you can photograph an animal and create a local collectible species card. You can also choose one existing photo with your device's photo picker, without granting access to your entire photo library or enabling the camera. FaunaNote creates a resized copy for identification and does not modify or delete the original in your photo library. When you take or choose a photo for AI identification, FaunaNote sends that photo through a FaunaNote service hosted by Vercel to Google Vertex AI.</p>
 
       <p>The photo is used to decide whether it shows an animal and, if so, return a likely common name, scientific name when reliable, animal group, confidence, and candidate matches. Results can be wrong and are not professional wildlife, veterinary, safety, conservation, or taxonomic advice. FaunaNote does not use submitted photos for advertising or tracking and does not train its own model with them.</p>
 
@@ -34,29 +34,35 @@
 
       <p>Provider references: <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/vertex-ai-zero-data-retention">Google Cloud retention</a>, <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/abuse-monitoring">Google abuse monitoring</a>, and <a href="https://vercel.com/legal/privacy-policy">Vercel Privacy Policy</a>.</p>
 
+      <h2>Species Name Search</h2>
+
+      <p>You can add an animal to your collection by name, or correct the species of a photo result, by typing a name into FaunaNote's species search. The text you type is sent through a FaunaNote service hosted by Vercel to iNaturalist, which returns matching animal names. FaunaNote keeps no copy of the text: its service does not write it to a database or to its logs and does not cache it. Vercel processes the request as FaunaNote's host. The text is not stored as part of your collection unless you pick a result and save it. iNaturalist receives the text from FaunaNote's service, not from your device, and runs its own service under its own terms and privacy policy. FaunaNote does not send it your photos, location, or notes. The search is not linked to an account because FaunaNote has no accounts.</p>
+
+      <p>Provider reference: <a href="https://www.inaturalist.org/pages/privacy">iNaturalist Privacy Policy</a>.</p>
+
       <h2>Saved Collection And Optional Catch Details</h2>
 
-      <p>Saved stickers, species cards, observation context (wild, pet, zoo, or unknown), place labels, notes, and approximate coordinates stay in local app storage on your device. They are not uploaded as collection data.</p>
+      <p>Saved stickers, photos, species cards, animals added by name, observation context (wild, pet, zoo, or unknown), place labels, notes, and approximate coordinates stay in local app storage on your device. They are not uploaded as collection data. Photos you save are copied into FaunaNote's own app storage, which is not your device's photo library. Because they are part of the app's data, they may be included in device backups made by your operating system or your own backup account (such as iCloud or Google backup), under the provider's own terms.</p>
 
       <h2>Location</h2>
 
-      <p>When you tap Save to Collection, FaunaNote may request foreground location once. If you allow it, FaunaNote rounds latitude and longitude before asking Apple's geocoding service for an approximate place label and before saving the coordinate for the private on-device map. Apple may process that approximate coordinate to provide the label and map. If you deny access or location fails, the animal observation is saved without a place. FaunaNote does not send the place label or coordinate to its own servers. You can remove saved places together with the rest of your local collection from Settings.</p>
+      <p>When you save a photo taken with the in-app camera, FaunaNote may request foreground location once. If you allow it, FaunaNote rounds latitude and longitude before asking Apple's geocoding service for an approximate place label and before saving the coordinate for the private on-device map. Apple may process that approximate coordinate to provide the label and map. If you deny access or location fails, the animal observation is saved without a place. Photos imported from your library are saved without automatically attaching your current location; FaunaNote does not read their EXIF location. FaunaNote does not send the place label or coordinate to its own servers. You can delete an individual sighting, including its saved place, from the species detail screen, or clear the entire local collection from Settings.</p>
 
       <h2>Feedback And Feature Requests</h2>
 
-      <p>In version 1.1.0, FaunaNote prepares a message in your device's email app. You review and choose whether to send it. FaunaNote does not directly transmit the message or optional reply email from the app. If you send the email, your email provider and FaunaNote support process it to respond or improve FaunaNote. Contact FaunaNote support to request deletion of a message you sent.</p>
+      <p>FaunaNote prepares a message in your device's email app. You review and choose whether to send it. FaunaNote does not directly transmit the message or optional reply email from the app. If you send the email, your email provider and FaunaNote support process it to respond or improve FaunaNote. Contact FaunaNote support to request deletion of a message you sent.</p>
 
       <h2>Retention And Deletion</h2>
 
-      <p>FaunaNote has no user account or cloud copy of your collection. Privacy &amp; Data lets you clear the saved collection and local sticker files. Unsaved camera and sticker-processing files are deleted on retake, cancellation, completion, or screen exit on a best-effort basis.</p>
+      <p>FaunaNote has no user account or cloud copy of your collection. The species detail screen lets you delete a selected sighting and its saved photo, notes, and place. Photos still used by another sighting are kept. Privacy &amp; Data lets you clear the saved collection and local sticker files. Unsaved camera, imported-photo copies, and sticker-processing files in temporary storage are deleted on retake, cancellation, completion, or screen exit on a best-effort basis; the operating system may also clear temporary storage at any time. Saved photos are kept until you delete them as described here. Clearing FaunaNote data does not delete original photos from your device's photo library.</p>
 
       <p>Local data remains until you delete it in FaunaNote, uninstall the app, or the operating system removes app storage. Clearing local data does not alter the provider retention periods for already processed classifier requests described above.</p>
 
       <h2>Third-Party Services And Content</h2>
 
-      <p>FaunaNote uses Apple platform services for distribution, maps, approximate place labels, and local Apple Vision subject lift; Vercel and Google Vertex AI for AI animal identification; your email provider only when you choose to send a prepared message; and runtime libraries needed to render the app.</p>
+      <p>FaunaNote uses Apple platform services for distribution, maps, approximate place labels, and local Apple Vision subject lift; Vercel and Google Vertex AI for AI animal identification; Vercel and iNaturalist for species name search; your email provider only when you choose to send a prepared message; and runtime libraries needed to render the app.</p>
 
-      <p>FaunaNote does not include advertising SDKs, analytics SDKs, or a user-account backend in version 1.1.0.</p>
+      <p>FaunaNote does not include advertising SDKs, analytics SDKs, or a user-account backend.</p>
 
       <h2>Contact</h2>
 
